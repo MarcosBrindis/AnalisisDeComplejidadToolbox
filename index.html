@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emparejamiento de Tuercas y Tornillos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <h1>Emparejamiento de Tuercas y Tornillos</h1>
+  <div class="form-group">
+    <label for="sizeInput">Número de tuercas y tornillos: </label>
+    <input type="number" id="sizeInput" min="1" step="1">
+    <button id="generateBtn">Generar</button>
+  </div>
+  <div>
+    <button id="emparejarCuadraticoBtn">Emparejar (O(n^2))</button>
+    <button id="emparejarLogaritmicoBtn">Emparejar (O(n log n))</button>
+    <button id="emparejarLinealBtn">Emparejar (O(n))</button>
+  </div>
+  <div id="resultado"></div>
+
+  <h2>Resultados de Emparejamiento</h2>
+  <table id="resultTable">
+    <thead>
+      <tr>
+        <th>Algoritmo</th>
+        <th>Número de elementos</th>
+        <th>Tiempo (ms)</th>
+        <th>Iteraciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Resultados-->
+    </tbody>
+  </table>
+
+  <div>
+    <canvas id="grafica1"></canvas>
+  </div>
+  <script type="module" src="/src/controller/scripts.mjs"></script>
+</body>
+</html>
